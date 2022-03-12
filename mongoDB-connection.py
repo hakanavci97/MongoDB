@@ -161,7 +161,7 @@ mycollection.delete_one({"name":"Iphone 11"})
 
 result = mycollection.delete_many({"name":{"$regex":"^S"}})
 
-print (f"{result.deleted_count} records deleted")
+print (f"{result.deleted_count} records deleted.")
 
 for i in mycollection.find():
     print(i)
