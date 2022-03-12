@@ -146,7 +146,7 @@ filter = {"name":"Samsung S9"}
 
 # result = mycollection.update_many(query,newValues)
 
-# print (f"{result.modified_count} adet kayıt güncellendi.")
+# print (f"{result.modified_count} records updated.")
 
 #DELETE_ONE()
 #DELETE_MANY()
@@ -161,7 +161,7 @@ mycollection.delete_one({"name":"Iphone 11"})
 
 result = mycollection.delete_many({"name":{"$regex":"^S"}})
 
-print (f"{result.deleted_count} adet kayıt güncellendi.")
+print (f"{result.deleted_count} records deleted")
 
 for i in mycollection.find():
     print(i)
